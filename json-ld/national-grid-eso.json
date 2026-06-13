@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "National Grid ESO / National Energy System Operator (NESO)",
+  "description": "National Energy System Operator (NESO) provides open data APIs for the UK electricity system, including carbon intensity forecasts, demand data, generation mix, ancillary services, balancing costs, and operational data for Great Britain's electricity network.",
+  "url": "https://www.neso.energy/",
+  "sameAs": [
+    "https://github.com/carbon-intensity",
+    "https://carbonintensity.org.uk/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "box.OpenData.ESO@nationalgrideso.com",
+      "contactType": "open data support"
+    }
+  ],
+  "knowsAbout": [
+    "Carbon Intensity Forecasting",
+    "Electricity Generation Mix",
+    "Grid Balancing",
+    "Energy System Planning",
+    "Demand Forecasting",
+    "Ancillary Services",
+    "Future Energy Scenarios",
+    "Renewable Energy",
+    "Clean Power"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "NESO Open Data APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "WebAPI",
+          "name": "Carbon Intensity API",
+          "url": "https://carbonintensity.org.uk/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "WebAPI",
+          "name": "NESO Data Portal API",
+          "url": "https://www.neso.energy/data-portal"
+        }
+      }
+    ]
+  },
+  "publishingPrinciples": "https://creativecommons.org/licenses/by/4.0/",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Kingdom"
+  },
+  "subjectOf": {
+    "@type": "WebSite",
+    "name": "NESO Data Portal",
+    "url": "https://www.neso.energy/data-portal"
+  }
+}

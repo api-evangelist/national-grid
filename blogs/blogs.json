@@ -1,0 +1,109 @@
+{
+  "provider": "national-grid",
+  "source": "https://www.neso.energy/news-and-events",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Unveiling the new project pipeline to deliver Clean Power by 2030",
+      "url": "https://www.neso.energy/news/unveiling-new-project-pipeline-deliver-clean-power-2030",
+      "date": "",
+      "summary": "NESO confirmed a new pipeline of energy projects prioritized for connection, unlocking £40 billion in clean investment annually toward the government's 2030 clean power goal."
+    },
+    {
+      "title": "Energy explained: the costs of balancing Britain's electricity system keep you powered",
+      "url": "https://www.neso.energy/news/energy-explained-costs-balancing-britains-electricity-system-keep-you-powered",
+      "date": "2026-04-30",
+      "summary": "Explores the costs associated with ensuring electricity is always there when we need it through balancing operations."
+    },
+    {
+      "title": "NESO publishes Summer Outlook",
+      "url": "https://www.neso.energy/news/neso-publishes-summer-outlook",
+      "date": "2026-04-14",
+      "summary": "Annual report setting out Great Britain's projected electricity needs for the summer ahead."
+    },
+    {
+      "title": "Strategic Energy Planning changes: a first for Great Britain",
+      "url": "https://www.neso.energy/news/strategic-energy-planning-changes-first-great-britain",
+      "date": "2026-02-13",
+      "summary": "Discusses how Great Britain's energy system is going through its biggest transformation in a century."
+    },
+    {
+      "title": "Britain's Energy Explained: 2025 Review",
+      "url": "https://www.neso.energy/news/britains-energy-explained-2025-review",
+      "date": "2026-01-14",
+      "summary": "Reviews major 2025 milestones on the journey toward secure, affordable, and clean energy."
+    },
+    {
+      "title": "NESO's 2026 priorities: a more secure, affordable, sustainable energy future",
+      "url": "https://www.neso.energy/news/nesos-2026-priorities-more-secure-affordable-sustainable-energy-future",
+      "date": "2026-01-05",
+      "summary": "Outlines 2026 priorities for a more secure and sustainable energy future."
+    },
+    {
+      "title": "Forget a white Christmas – 2025 could be the greenest ever",
+      "url": "https://www.neso.energy/news/forget-white-christmas-2025-could-be-greenest-ever",
+      "date": "",
+      "summary": "Discussion of renewable energy records and green energy milestones for Christmas 2025."
+    },
+    {
+      "title": "Energy Explained: How inertia keeps the lights on",
+      "url": "https://www.neso.energy/news/energy-explained-how-inertia-keeps-lights",
+      "date": "",
+      "summary": "Explains the role of inertia in maintaining grid stability and keeping the electricity system running."
+    },
+    {
+      "title": "Taking an economic lens to our Future Energy Scenarios",
+      "url": "https://www.neso.energy/news/taking-economic-lens-our-future-energy-scenarios",
+      "date": "",
+      "summary": "Analysis of Future Energy Scenarios from an economic perspective."
+    },
+    {
+      "title": "Energy Explained: What happens when the clocks go back?",
+      "url": "https://www.neso.energy/news/energy-explained-what-happens-when-clocks-go-back",
+      "date": "",
+      "summary": "Explores the impact of daylight saving time changes on energy demand and grid operations."
+    },
+    {
+      "title": "Connections Reform: The key to unlocking GB growth",
+      "url": "https://www.neso.energy/news/connections-reform-key-unlocking-gb-growth",
+      "date": "",
+      "summary": "Discussion of connection reform initiatives and their importance to GB's energy transition and economic growth."
+    },
+    {
+      "title": "Winter Outlook: Complacency isn't an option",
+      "url": "https://www.neso.energy/news/winter-outlook-complacency-isnt-option",
+      "date": "",
+      "summary": "Winter electricity supply outlook with analysis of risks and preparation for peak demand periods."
+    },
+    {
+      "title": "Fintan Slye: Reflects on the first year of the National Energy System Operator",
+      "url": "https://www.neso.energy/news/fintan-slye-reflects-first-year-national-energy-system-operator",
+      "date": "",
+      "summary": "CEO reflections on NESO's inaugural year as the National Energy System Operator."
+    },
+    {
+      "title": "Energy Explained: Future-Proofing GB's Power System: Reflections on April 2025 Iberian Event",
+      "url": "https://www.neso.energy/news/energy-explained-future-proofing-gbs-power-system-reflections-april-2025-iberian-event",
+      "date": "",
+      "summary": "Analysis of lessons learned from the April 2025 Iberian grid event for future-proofing GB's power system."
+    },
+    {
+      "title": "Innovation projects secure funding for Beta development",
+      "url": "https://www.neso.energy/news/innovation-projects-secure-funding-beta-development",
+      "date": "",
+      "summary": "Announcement of innovation projects securing funding for Beta development phase."
+    },
+    {
+      "title": "From ambition to delivery: Britain's reliable, affordable and clean energy future",
+      "url": "https://www.neso.energy/news/ambition-delivery-britains-reliable-affordable-and-clean-energy-future",
+      "date": "",
+      "summary": "Overview of the path from energy ambitions to delivery of reliable, affordable and clean energy for Britain."
+    },
+    {
+      "title": "NESO and electricity networks issue offers to over half of energy projects needed by 2030",
+      "url": "https://www.neso.energy/news/neso-and-electricity-networks-issue-offers-over-half-energy-projects-needed-2030",
+      "date": "",
+      "summary": "Announcement that NESO and electricity networks have issued connection offers to more than half the energy projects needed to meet 2030 clean power targets."
+    }
+  ]
+}

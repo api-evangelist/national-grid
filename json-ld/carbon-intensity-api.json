@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Carbon Intensity API",
+  "description": "Official Carbon Intensity forecast API for Great Britain, developed by NESO in partnership with EDF Europe, University of Oxford, and WWF. Provides 96+ hour ahead national and regional carbon intensity forecasts, generation mix data, and historical carbon intensity statistics across 14 GB regions and by outward postcode.",
+  "url": "https://carbonintensity.org.uk/",
+  "documentation": "https://carbon-intensity.github.io/api-definitions/",
+  "termsOfService": "https://github.com/carbon-intensity/terms",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "provider": {
+    "@type": "Organization",
+    "name": "National Energy System Operator (NESO)",
+    "url": "https://www.neso.energy/",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "lyndon.ruff@nationalgrideso.com",
+      "contactType": "technical support"
+    },
+    "sameAs": [
+      "https://github.com/carbon-intensity"
+    ]
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP",
+    "description": "Free open access API with CC BY 4.0 license"
+  },
+  "applicationCategory": "Energy Data API",
+  "keywords": [
+    "carbon intensity",
+    "electricity",
+    "sustainability",
+    "forecasting",
+    "generation mix",
+    "regional data",
+    "UK",
+    "Great Britain",
+    "energy",
+    "climate"
+  ],
+  "softwareVersion": "v1",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://api.carbonintensity.org.uk",
+    "serviceType": "REST API"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "baseURL",
+      "value": "https://api.carbonintensity.org.uk"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forecastHorizon",
+      "value": "96+ hours ahead"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "regions",
+      "value": "14 GB regions plus national"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dataFormat",
+      "value": "JSON"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "authentication",
+      "value": "None required"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/apis.yml"
+  }
+}

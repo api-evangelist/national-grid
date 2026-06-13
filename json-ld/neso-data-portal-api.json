@@ -1,0 +1,129 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "NESO Data Portal API",
+  "description": "CKAN-based REST API providing programmatic access to hundreds of electricity system datasets published by the National Energy System Operator. Covers ancillary services, balancing costs, carbon intensity, connection registers, constraint management, demand forecasts, generation data, network charges, trading data, Future Energy Scenarios, and more.",
+  "url": "https://www.neso.energy/data-portal",
+  "documentation": "https://www.neso.energy/data-portal/api-guidance",
+  "termsOfService": "https://github.com/carbon-intensity/terms",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "provider": {
+    "@type": "Organization",
+    "name": "National Energy System Operator (NESO)",
+    "url": "https://www.neso.energy/",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "box.OpenData.ESO@nationalgrideso.com",
+      "contactType": "customer support"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP",
+    "description": "Free open data API with CC BY 4.0 license"
+  },
+  "applicationCategory": "Open Data Portal API",
+  "keywords": [
+    "energy data",
+    "open data",
+    "demand forecasting",
+    "generation",
+    "ancillary services",
+    "balancing costs",
+    "carbon intensity",
+    "CKAN",
+    "UK",
+    "Great Britain",
+    "electricity",
+    "grid operations"
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://api.neso.energy/api/3/action",
+    "serviceType": "CKAN REST API"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "baseURL",
+      "value": "https://api.neso.energy/api/3/action"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "apiStandard",
+      "value": "CKAN 2.8 API"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "catalogRateLimit",
+      "value": "1 request per second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "datastoreRateLimit",
+      "value": "2 requests per minute"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dataFormat",
+      "value": "JSON"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "authentication",
+      "value": "None required for public datasets"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "datasetCount",
+      "value": "hundreds of datasets"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "Dataset",
+      "name": "Ancillary Services Data"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Balancing Costs Data"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Carbon Intensity Data"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Connection Registers"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Constraint Management Data"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Demand Forecasts"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Generation Data"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Network Charges"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Future Energy Scenarios"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Trading Data"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/apis.yml"
+  }
+}
