@@ -1,0 +1,57 @@
+name: National Grid ESO FinOps
+description: Financial operations profile for National Grid ESO / NESO API consumption.
+  All APIs are free and open-access — there are no paid tiers, subscription fees,
+  or per-request charges. Cost management is therefore limited to infrastructure
+  costs incurred by the consumer (compute, egress, storage) when integrating with
+  these APIs.
+provider: National Grid ESO / National Energy System Operator (NESO)
+pricing:
+  model: free-open-data
+  cost: 0
+  currency: GBP
+  notes: >
+    Both the NESO Data Portal CKAN API and the Carbon Intensity API are provided
+    as public goods under open data licensing. There are no API keys to purchase,
+    no subscription tiers, and no usage-based billing. The CC BY 4.0 licence and
+    NESO Open Licence permit commercial reuse with attribution.
+
+costDrivers:
+  - name: API Calls
+    cost: 0
+    unit: per-request
+    notes: No charge per API call from NESO.
+  - name: Data Volume
+    cost: 0
+    unit: per-GB
+    notes: No data egress charge from NESO.
+
+consumerCosts:
+  - name: Compute
+    description: Server or cloud function costs to execute API polling/integration
+      code on the consumer side.
+  - name: Storage
+    description: Database or object storage costs if the consumer caches or archives
+      NESO dataset responses locally.
+  - name: Egress
+    description: Cloud data egress costs if the consumer is running workloads in
+      a cloud provider and pulling NESO data from the UK.
+
+optimizationTips:
+  - Check resource modification dates via resource_show before re-fetching datasets
+    to avoid redundant CKAN Datastore calls (limited to 2/min).
+  - Cache Carbon Intensity API responses locally — half-hourly data is only updated
+    every 30 minutes, so caching per settlement period is safe.
+  - Use filtered Datastore queries with specific date ranges and field selectors
+    rather than downloading full datasets to reduce payload sizes.
+  - Prefer the datastore_search endpoint with limit/offset pagination over
+    datastore_search_sql for simple queries to reduce query complexity.
+
+license:
+  name: Creative Commons Attribution 4.0 International (CC BY 4.0)
+  url: https://creativecommons.org/licenses/by/4.0/
+  requiresAttribution: true
+  commercialUse: true
+  notes: >
+    Attribution is required. Derivative works and commercial applications are
+    permitted. The NESO Open Licence applies to datasets explicitly marked as such
+    on the data portal.

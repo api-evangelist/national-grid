@@ -1,0 +1,60 @@
+name: NESO Data Portal Rate Limits
+description: Rate limiting policies for the National Energy System Operator Data
+  Portal APIs. The portal uses separate rate limits for the CKAN catalog API and
+  the Datastore (tabular data query) API. No authentication is required; limits
+  apply to all anonymous users equally.
+rateLimits:
+  - name: CKAN Catalog API Rate Limit
+    description: The CKAN catalog API enforces a maximum of one request per second.
+      Applies to endpoints such as organization_list, package_list, tag_list,
+      package_search, resource_search, resource_show, and package_show.
+    baseURL: https://api.neso.energy/api/3/action/
+    limit: 1
+    unit: second
+    scope: per-user
+    endpoints:
+      - /organization_list
+      - /package_list
+      - /tag_list
+      - /package_search
+      - /resource_search
+      - /resource_show
+      - /package_show
+    guidance: >
+      Avoid polling continuously. Before querying a dataset, check the resource
+      modification date via resource_show to determine whether new data is available,
+      rather than re-fetching the full dataset on each run.
+
+  - name: Datastore API Rate Limit
+    description: The Datastore API (tabular data queries) enforces a stricter limit
+      of a maximum of two requests per minute. Applies to datastore_search and
+      datastore_search_sql endpoints.
+    baseURL: https://api.neso.energy/api/3/action/
+    limit: 2
+    unit: minute
+    scope: per-user
+    endpoints:
+      - /datastore_search
+      - /datastore_search_sql
+    guidance: >
+      Use specific filters (field selections, WHERE clauses, date ranges) to
+      retrieve only the data you need per request. The SQL endpoint supports
+      full PostgreSQL syntax for complex queries. Field names and resource IDs
+      require double-quoting in SQL queries.
+
+  - name: Carbon Intensity API Rate Limit
+    description: No explicit rate limits are documented for the Carbon Intensity
+      API (api.carbonintensity.org.uk). The API is openly accessible and designed
+      for programmatic access by developers and smart device integrations.
+    baseURL: https://api.carbonintensity.org.uk
+    limit: null
+    unit: null
+    scope: public
+    guidance: >
+      No rate limit is documented. Use reasonable request pacing and cache
+      responses locally where appropriate, especially for historical and forecast
+      data that does not change frequently.
+
+notes:
+  - source: https://www.neso.energy/data-portal/api-guidance
+    retrieved: '2026-06-13'

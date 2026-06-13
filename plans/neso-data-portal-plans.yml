@@ -1,0 +1,40 @@
+name: NESO Data Portal Plans
+description: Access plans for the National Energy System Operator Data Portal APIs.
+  Both the Carbon Intensity API and the NESO Data Portal CKAN API are freely available
+  with no authentication required and no subscription fees. Access is governed by
+  open data licensing (CC BY 4.0 / NESO Open Licence) rather than commercial tiers.
+plans:
+  - name: Free Open Access
+    description: Full access to all publicly available datasets and endpoints with
+      no API key, no registration, and no subscription required. Both the Carbon
+      Intensity API (api.carbonintensity.org.uk) and the NESO Data Portal CKAN API
+      (api.neso.energy) are open to all users at no cost.
+    url: https://www.neso.energy/data-portal/api-guidance
+    price: 0
+    currency: GBP
+    unit: month
+    rateLimits:
+      - name: CKAN Catalog API
+        description: Maximum one request per second to catalog/search endpoints
+        limit: 1
+        unit: second
+      - name: Datastore API
+        description: Maximum two requests per minute to tabular data query endpoints
+        limit: 2
+        unit: minute
+    features:
+      - Full access to CKAN catalog endpoints (organization_list, package_list,
+          package_search, resource_show, package_show)
+      - Full access to Datastore query endpoints (datastore_search,
+          datastore_search_sql)
+      - Full access to Carbon Intensity API (national, regional, generation mix)
+      - JSON response format
+      - SQL-based filtering via PostgreSQL syntax
+      - Postcode-level regional carbon intensity data
+      - Up to 14 days date-range queries for carbon intensity
+      - Up to 30 days date-range queries for carbon intensity statistics
+      - 96+ hour ahead carbon intensity forecasts
+      - No API key or registration required
+    authentication:
+      type: none
+      description: No authentication required. All endpoints are publicly accessible.

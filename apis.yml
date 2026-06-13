@@ -1,0 +1,119 @@
+name: National Grid ESO
+description: National Energy System Operator (NESO) provides open data APIs for
+  the UK electricity system, including carbon intensity forecasts, demand data,
+  generation mix, ancillary services, balancing costs, and operational data for
+  Great Britain's electricity network. The Carbon Intensity API delivers 96+ hour
+  ahead forecasts at both national and regional levels, while the NESO Data Portal
+  (CKAN-based) exposes hundreds of datasets covering the full spectrum of electricity
+  system operations.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Energy
+  - Electricity
+  - Carbon Intensity
+  - UK
+  - Open Data
+  - Sustainability
+  - Grid Operations
+url: https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+apis:
+  - name: Carbon Intensity API
+    description: Official Carbon Intensity forecast API for Great Britain, developed
+      by NESO in partnership with EDF Europe, University of Oxford, and WWF. Provides
+      96+ hour ahead national and regional carbon intensity forecasts, generation mix
+      data, and historical carbon intensity statistics across 14 GB regions and by
+      outward postcode.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://carbonintensity.org.uk/
+    baseURL: https://api.carbonintensity.org.uk
+    tags:
+      - Carbon Intensity
+      - Electricity
+      - Sustainability
+      - Forecasting
+      - Generation Mix
+      - Regional Data
+    properties:
+      - type: Documentation
+        url: https://carbon-intensity.github.io/api-definitions/
+      - type: OpenAPI
+        url: https://carbon-intensity.github.io/api-definitions/
+      - type: GitHubOrganization
+        url: https://github.com/carbon-intensity
+      - type: TermsOfService
+        url: https://github.com/carbon-intensity/terms
+      - type: License
+        url: https://creativecommons.org/licenses/by/4.0/
+    contact:
+      - FN: NESO Carbon Intensity Team
+        email: lyndon.ruff@nationalgrideso.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/carbon-intensity-openapi-search.yml
+    aid: national-grid:carbon-intensity-api
+
+  - name: NESO Data Portal API
+    description: CKAN-based REST API providing programmatic access to hundreds of
+      electricity system datasets published by the National Energy System Operator.
+      Covers ancillary services, balancing costs, carbon intensity, connection
+      registers, constraint management, demand forecasts, generation data, network
+      charges, trading data, Future Energy Scenarios, and more. Rate limited to one
+      request per second for the catalog API and two requests per minute for the
+      Datastore (tabular data) API.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.neso.energy/data-portal
+    baseURL: https://api.neso.energy/api/3/action
+    tags:
+      - Energy Data
+      - Open Data
+      - Demand Forecasting
+      - Generation
+      - Ancillary Services
+      - Balancing Costs
+      - Carbon Intensity
+      - CKAN
+    properties:
+      - type: Documentation
+        url: https://www.neso.energy/data-portal/api-guidance
+      - type: ExternalDocumentation
+        url: https://docs.ckan.org/en/2.8/api/
+      - type: Portal
+        url: https://www.neso.energy/data-portal
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/rate-limits/neso-data-portal-rate-limits.yml
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/plans/neso-data-portal-plans.yml
+    contact:
+      - FN: NESO Open Data Team
+        email: box.OpenData.ESO@nationalgrideso.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/neso-data-portal-openapi-search.yml
+    aid: national-grid:neso-data-portal-api
+
+common:
+  - type: Portal
+    url: https://www.neso.energy/data-portal
+  - type: News
+    url: https://www.neso.energy/news-and-events
+  - type: MediaCentre
+    url: https://www.neso.energy/news-and-events/media-centre
+  - type: About
+    url: https://www.neso.energy/
+  - type: License
+    url: https://creativecommons.org/licenses/by/4.0/
+  - type: TermsOfService
+    url: https://github.com/carbon-intensity/terms
+  - type: FAQ
+    url: https://www.neso.energy/data-portal/about-data-portal
+  - type: Support
+    url: mailto:box.OpenData.ESO@nationalgrideso.com
+  - type: GitHubOrganization
+    url: https://github.com/carbon-intensity
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
