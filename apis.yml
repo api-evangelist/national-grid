@@ -6,7 +6,7 @@ description: National Energy System Operator (NESO) provides open data APIs for
   ahead forecasts at both national and regional levels, while the NESO Data Portal
   (CKAN-based) exposes hundreds of datasets covering the full spectrum of electricity
   system operations.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Energy
   - Electricity
@@ -26,7 +26,7 @@ apis:
       96+ hour ahead national and regional carbon intensity forecasts, generation mix
       data, and historical carbon intensity statistics across 14 GB regions and by
       outward postcode.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://carbonintensity.org.uk/
     baseURL: https://api.carbonintensity.org.uk
     tags:
@@ -63,7 +63,7 @@ apis:
       charges, trading data, Future Energy Scenarios, and more. Rate limited to one
       request per second for the catalog API and two requests per minute for the
       Datastore (tabular data) API.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.neso.energy/data-portal
     baseURL: https://api.neso.energy/api/3/action
     tags:
