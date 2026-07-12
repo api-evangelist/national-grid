@@ -95,6 +95,10 @@ apis:
     aid: national-grid:neso-data-portal-api
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/national-grid-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/national-grid-domain-security.yml
   - type: Portal
     url: https://www.neso.energy/data-portal
   - type: News
