@@ -30,7 +30,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/national-grid/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - name: Carbon Intensity API
     description: Official Carbon Intensity forecast API for Great Britain, developed
